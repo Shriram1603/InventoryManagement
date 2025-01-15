@@ -26,11 +26,11 @@ public class InventoryManager
 
     public IList<string> DisplayProducts()
     {
-        int Serial_no = 1;
+        int serialNumber = 1;
         IList<string> products = new List<string>();
         foreach (var product in _products)
         {
-            products.Add($"\t{Serial_no++}. {product.GetDetails()}");
+            products.Add($"\t{serialNumber++}. {product.GetDetails()}");
         }
         return products;
     }

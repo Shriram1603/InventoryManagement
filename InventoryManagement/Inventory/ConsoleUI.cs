@@ -20,9 +20,9 @@ public class ConsoleUI
             "\n [5] - Search " +
             "\n [6] - Sorted View" +
             "\n [7] - exit \n" );
-        var UserInput = Console.ReadLine();
+        var userInput = Console.ReadLine();
         int userChoice;
-        if (!int.TryParse(UserInput, out userChoice))
+        if (!int.TryParse(userInput, out userChoice))
         {
             return 0;
         }
